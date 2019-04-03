@@ -3,14 +3,17 @@ class CatsController < ApplicationController
     @cats = Cat.all
     render :index
   end
+  
   def show
     @cat = Cat.find_by(id: params[:id])
     render :show
   end
+
   def new 
     @cat = Cat.new
     render :new
   end
+
   def create
     @cat = Cat.new(cat_params)
     if @cat.save
@@ -21,10 +24,12 @@ class CatsController < ApplicationController
       render :new
     end
   end
+
   def edit
     @cat = Cat.find_by(id: params[:id])
     render :edit
   end
+
   def update
     @cat = Cat.find_by(id: params[:id])
 

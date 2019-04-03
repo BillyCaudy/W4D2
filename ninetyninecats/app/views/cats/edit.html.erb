@@ -1,7 +1,8 @@
-<% cat = @cats %>
+<% cat = @cat %>
 
 <form action="<%= cat_url(cat) %>" method="post">
   <input type="hidden" name="_method" value="PATCH">
+
   <label for="name">Name</label>
   <input id="name" type="text" name="cat[name]" value="<%= cat.name %>">
 

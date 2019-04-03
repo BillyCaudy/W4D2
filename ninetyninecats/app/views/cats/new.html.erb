@@ -1,0 +1,31 @@
+<% cat = @cats %>
+
+<form action="<%= cats_url %>" method="post">
+ 
+  <label for="name">Name</label>
+  <input id="name" type="text" name="cat[name]" value="">
+
+  <br>
+
+  <label for="birth_date">Birth_date</label>
+  <input id="birth_date" type="text" name="cat[birth_date]" value="">
+
+  <br>
+
+  <label for="color">Color</label>
+  <input id="color" type="text" name="cat[color]" value="">
+
+  <br>
+
+  <label for="sex">Sex</label>
+  <input id="sex" type="text" name="cat[sex]" value="">
+
+  <br><br>
+
+  <label for="description">Description</label>
+  <textarea name="cat[description]">
+
+  </textarea>
+
+  <input type="submit" value="Add a cat!">
+</form>

@@ -1,0 +1,25 @@
+<h1><%= @cat.name %></h1>
+
+<table border="1">
+  <tr>
+    <th>Age:</th> 
+    <th>Color:</th> 
+    <th>Sex:</th> 
+  </tr>
+  <tr>
+    <td align=center><%= @cat.age%></td>
+    <td align=center><%= @cat.color%></td>
+    <td align=center><%= @cat.sex%></td>
+  </tr>
+</table>
+
+<p>
+  <%= @cat.description %>
+</p>
+<!-- 
+
+# birth_date :date not null
+# color :string not null
+# name :string not null
+# sex :string(1) not null
+# description :text not null -->
